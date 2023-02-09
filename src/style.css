@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.my-emoji{
+    height: 2em;
+    width: 2em;
+    vertical-align: middle;
+}
