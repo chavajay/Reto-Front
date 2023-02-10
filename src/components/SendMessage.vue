@@ -1,7 +1,7 @@
 <template>
     <div class="shadow-2xl q-pa-md row justify-center">
         <div style="width: 100%; max-width: 100%">
-            <q-input outlined bottom-slots label="Label" counter maxlength="100" >
+            <q-input outlined bottom-slots label="Escriba" counter maxlength="100" >
                 <template v-slot:before>
                 <q-avatar>
                     <img src="https://cdn.quasar.dev/img/avatar2.jpg">
@@ -14,7 +14,7 @@
                 </template>
 
                 <template v-slot:hint>
-                Field hint
+                    Ingrese mensaje
                 </template>
 
                 <template v-slot:after>

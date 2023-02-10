@@ -1,6 +1,6 @@
 <script setup>
-import { useTodo } from "../store/useTodo";
-const store = useTodo();
+import { useData } from "../store/useData";
+const store = useData();
 console.log(store.TodoList.map(item => console.log(item)))
 </script>
 
@@ -12,24 +12,24 @@ console.log(store.TodoList.map(item => console.log(item)))
           <q-card-section class="q-pt-xs">
             <div
               class="text-overline"
-              v-for="todo in store.TodoList"
-              :key="`todo-item${todo.id}`"
+              v-for="data in store.TodoList"
+              :key="`todo-item${data.id}`"
             >
-              {{ todo.version }}
+              {{ data.version }}
             </div>
             <div 
                 class="text-h7 text-sky-600 q-mt-sm q-mb-xs"
-                v-for="todo in store.TodoList"
-                :key="`todo-item${todo.id}`"
+                v-for="data in store.TodoList"
+                :key="`todo-item${data.id}`"
                 >
-                {{ todo.title }}
+                {{ data.title }}
             </div>
             <div 
                 class="text-caption text-grey"
-                v-for="todo in store.TodoList"
-                :key="`todo-item${todo.id}`"
+                v-for="data in store.TodoList"
+                :key="`todo-item${data.id}`"
                 >
-                 {{ todo.date }}
+                 {{ data.date }}
             </div>
           </q-card-section>
 
